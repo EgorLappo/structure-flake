@@ -24,12 +24,12 @@
             };
 
             buildPhase = ''
-              make 
+              make
             '';
 
             installPhase = ''
               mkdir -p $out/bin
-              cp -r structure $out/bin
+              cp -r ../exe/* $out/bin
             '';
 
           };
